@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
+import java.time.LocalDate;
+
 @RestController
 @RequestMapping("/api")
 @CrossOrigin("http://localhost:5173/")
@@ -21,5 +23,11 @@ public class MainController {
     @GetMapping("/apod")
     public Mono<JsonNode> getApod(){
         return apiService.getApod();
+    }
+
+    @GetMapping("/mars-photo")
+    public Mono<JsonNode> getMarsPhoto(){
+        String dateString = "2020-12-20";
+        return apiService.getMarsPhoto(LocalDate.parse(dateString));
     }
 }

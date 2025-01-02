@@ -28,7 +28,7 @@ export default function Apod() {
       <h2 className="text-7xl font-bold text-gray-250 m-5 text-center">
         Astronomy Picture of the Day
       </h2>
-      <p className="text-xl text-gray-200 text-center">
+      <p className="text-xl text-center">
         APOD (Astronomy Picture of the Day) is a popular feature provided by
         NASA and Michigan Technological University. Every day, it showcases a
         new image or photograph of space, accompanied by a detailed explanation
@@ -39,13 +39,13 @@ export default function Apod() {
           Loading...
         </p>
       ) : (
-        <div className="max-w-2xl p-6 shadow-md">
+        <div className="p-6 shadow-md flex flex-col items-center justify-center gap-y-2 mt-2">
           <img
-            className="w-full h-auto rounded-lg shadow-lg mb-4"
+            className="w-2xl rounded-lg shadow-lg mb-4"
             src={data.url}
             alt={data.explanation}
           />
-          <p className="text-gray-400 text-justify">{data.explanation}</p>
+          <p className="text-justify">{data.explanation}</p>
         </div>
       )}
     </div>

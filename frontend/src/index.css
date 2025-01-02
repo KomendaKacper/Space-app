@@ -20,12 +20,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #9d97ac;
+  color: #000000;
 }
 
 img {
-  border: 10px solid #ffffff;
+  border: 10px solid #c8c8c8;
+  height: 800px;
 }
 
 h1 {
@@ -37,13 +38,19 @@ nav {
   background-image: url("../public/images/background.jpg");
 }
 
-a:hover {
+.gradient-link:hover {
+  background: linear-gradient(90deg, rgb(234, 0, 255) 0%, rgb(111, 0, 255) 50%, rgb(234, 0, 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: underline;
-  color:rgb(221, 127, 255)
 }
 
 .home {
   background-image: url("../public/images/main-background.jpg") ;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+a:hover {
+  color: rgb(234, 0, 255);
 }
