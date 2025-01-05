@@ -9,10 +9,7 @@ export default function Sidebar() {
         </a>
       <div className="flex-1 flex flex-col items-center justify-center space-y-5">
       <a href="apod" className="gradient-link">Astronomy Picture of the Day</a>
-      <a href="apod" className="gradient-link">Astronomy Picture of the Day</a>
-      <a href="apod" className="gradient-link">Astronomy Picture of the Day</a>
-      <a href="apod" className="gradient-link">Astronomy Picture of the Day</a>
-      <a href="apod" className="gradient-link">Astronomy Picture of the Day</a>
+      <a href="mars-photo" className="gradient-link">Mars Photo</a>
       </div>
     </div>
   );

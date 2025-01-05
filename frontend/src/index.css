@@ -39,7 +39,7 @@ nav {
 }
 
 .gradient-link:hover {
-  background: linear-gradient(90deg, rgb(234, 0, 255) 0%, rgb(111, 0, 255) 50%, rgb(234, 0, 255) 100%);
+  background: linear-gradient(90deg, rgb(111, 0, 255) 0%, rgb(234, 0, 255) 50%, rgb(111, 0, 255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: underline;
